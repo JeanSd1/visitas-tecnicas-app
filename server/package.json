@@ -1,0 +1,30 @@
+{
+  "name": "visitas-tecnicas-app",
+  "version": "1.0.0",
+  "description": "Sistema de Gestão de Visitas Técnicas com Dashboard Web",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start": "node server/index.js",
+    "build": "cd client && npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["visitas", "tecnicas", "gestao", "clientes"],
+  "author": "JeanSd1",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^5.8.0",
+    "mongoose": "^7.5.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "bcrypt": "^5.1.1",
+    "jsonwebtoken": "^9.1.0",
+    "pdfkit": "^0.13.0",
+    "nodemailer": "^6.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1"
+  }
+}
